@@ -1,0 +1,31 @@
+Raw Column,Role,GL Account - COGS,GL Account - OpEx,Line Memo
+Co,Meta,,,
+Check Date,Meta,,,
+System No.,Meta,,,
+Cost Center,Meta,,,
+Employee Name,Meta,,,
+Net Pay,NetPay,,,Germany Payroll Liability
+Employers Cost,Aggregate,,,
+Gross Pay,Aggregate,,,
+Salary,Expense,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,611100 Salary and Compensation : Salaries and Wages,Germany Payroll - Salary
+Maternity Pay,Expense,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,611100 Salary and Compensation : Salaries and Wages,Germany Payroll - Maternity
+vacation payout,Expense,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,611100 Salary and Compensation : Salaries and Wages,Germany Payroll - Vacation
+Hourly rate,Expense,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,611100 Salary and Compensation : Salaries and Wages,Germany Payroll - Hourly
+Car allowance,Expense,511300 COGS - Salary and Compensation : COGS - Other Benefits,611400 Salary and Compensation : Other Benefits,Germany Payroll - Car Allowance
+Comission,Expense,511150 COGS - Salary and Compensation : COGS - Bonus,611150 Salary and Compensation : Bonus,Germany Payroll - Commission
+health and nursing insurance,Expense,511200 COGS - Salary and Compensation : COGS - Health Benefits,611300 Salary and Compensation : Health Benefits,Germany Payroll - Health Benefits
+Voluntary Health insurance ER part,Expense,511200 COGS - Salary and Compensation : COGS - Health Benefits,611300 Salary and Compensation : Health Benefits,Germany Payroll - Health Benefits
+expense reimbursement,Expense,,641400 Office Supplies and Events : Computer Equipment,Germany Payroll - Expense Reimbursement
+retirement plan ER part,Expense,511300 COGS - Salary and Compensation : COGS - Other Benefits,611400 Salary and Compensation : Other Benefits,Germany Payroll - Retirement
+Capital Forming,Expense,511300 COGS - Salary and Compensation : COGS - Other Benefits,611400 Salary and Compensation : Other Benefits,Germany Payroll - Capital Forming
+social security ER,Expense,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Germany Payroll Taxes
+Gift Card,IgnoreIfZero,,,Germany Payroll - Gift Card (IGNORED)
+Social Security ee,EEDeduction,,,
+Voluntary Health insurance EE part,EEDeduction,,,
+Pension Insurance,EEDeduction,,,
+Capital Forming payment,EEDeduction,,,
+lump sum tax EE,EEDeduction,,,
+Prepayment tax,EEDeduction,,,
+Expense Reimbursement taxfree,EEDeduction,,,
+Advance payment,EEDeduction,,,
+Lump Sum tax,EEDeduction,,,

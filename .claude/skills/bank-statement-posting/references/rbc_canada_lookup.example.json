@@ -1,0 +1,51 @@
+{
+  "_comment": "Maps Canadian-bank CSV description strings to transaction classifications. Used by the bank-statement-posting skill to auto-route Canadian transactions. Tune patterns by category for your bank's CSV format.",
+  "_schema_version": 1,
+  "categories": {
+    "Payroll": {
+      "patterns": [
+        "ADP PAYROLL",
+        "PAYROLL EFT",
+        "DIRECT DEP"
+      ],
+      "default_gl_account": "611100",
+      "default_classification": "payroll_wire"
+    },
+    "Tax": {
+      "patterns": [
+        "CRA REMIT",
+        "CRA PAYMENT",
+        "TAX REMITTANCE"
+      ],
+      "default_gl_account": "611500",
+      "default_classification": "tax_remittance"
+    },
+    "Benefits": {
+      "patterns": [
+        "BENEFITS PROVIDER",
+        "GROUP HEALTH",
+        "RRSP CONTRIB"
+      ],
+      "default_gl_account": "611700",
+      "default_classification": "benefits"
+    },
+    "Domestic Transfer": {
+      "patterns": [
+        "DOM TRANSFER",
+        "INTERAC E-TFR",
+        "BUSINESS TRANSFER"
+      ],
+      "default_gl_account": null,
+      "default_classification": "transfer"
+    },
+    "Bank Fees": {
+      "patterns": [
+        "MONTHLY SERVICE FEE",
+        "OVERDRAFT",
+        "WIRE FEE"
+      ],
+      "default_gl_account": "710000",
+      "default_classification": "bank_fee"
+    }
+  }
+}

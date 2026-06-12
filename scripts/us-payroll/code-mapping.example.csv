@@ -1,0 +1,19 @@
+ADP Pay Code,Description,Side,NetSuite GL Account,Account Number,Notes
+REG,Regular hours,Debit,611,611100,Base salaries and wages
+OT,Overtime,Debit,611,611100,
+BONUS,Bonus,Debit,612,611200,
+COMM,Sales commission,Debit,613,611300,
+SEV,Severance,Debit,614,611400,
+FED-TAX,Federal income tax withheld,Credit,Liability,221000,Accrued payroll tax payable
+STATE-TAX,State income tax withheld,Credit,Liability,221000,
+FICA-SS,Employee Social Security,Credit,Liability,221000,
+FICA-MED,Employee Medicare,Credit,Liability,221000,
+FUTA,Employer federal unemployment,Debit,615,611500,Employer payroll tax
+SUTA,Employer state unemployment,Debit,615,611500,
+ER-FICA-SS,Employer Social Security,Debit,615,611500,
+ER-FICA-MED,Employer Medicare,Debit,615,611500,
+401K-EE,Employee 401(k) deduction,Credit,Liability,221000,
+401K-ER,Employer 401(k) match,Debit,618,611800,
+HEALTH-EE,Employee medical premium,Credit,Liability,221000,
+HEALTH-ER,Employer medical contribution,Debit,616,611600,
+NET-PAY,Net pay disbursed,Credit,Bank,101000,Chase operating

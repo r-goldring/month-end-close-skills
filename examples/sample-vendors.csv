@@ -1,0 +1,17 @@
+Internal ID,Name,Default Expense Account,Default Department,Currency,Subsidiary,Inactive
+1001,BillFlow,671300 Software : G&A,G&A : Finance,USD,Acme Inc.,No
+1002,Workhorse HR,611700 Benefits : Other,G&A : HR,USD,Acme Inc.,No
+1003,RetireBridge,611800 401(k) Match,G&A : HR,USD,Acme Inc.,No
+1004,FlexBenefits,611600 Benefits : Medical,G&A : HR,USD,Acme Inc.,No
+1005,Slackatron,671200 Software : Sales Tools,Sales : Region A,USD,Acme Inc.,No
+1006,Datadawg Analytics,671100 Software : Engineering Tools,Engineering : Backend,USD,Acme Inc.,No
+1007,Cloudbase Inc.,671100 Software : Engineering Tools,Engineering : Infrastructure,USD,Acme Inc.,No
+1008,Pingmaster,671100 Software : Engineering Tools,Engineering : Infrastructure,USD,Acme Inc.,No
+1009,Inkwell Legal LLP,651100 Professional Fees : Legal,G&A : Legal,USD,Acme Inc.,No
+1010,Ledgerline Accounting,651150 Professional Fees : Accounting,G&A : Finance,USD,Acme Inc.,No
+1011,ContractorBridge,511370 COGS : Contractors,Engineering : Backend,USD,Acme Inc.,No
+1012,Northern Talent Co,511370 COGS : Contractors,Engineering : Frontend,USD,Acme Inc.,No
+1013,Brex,611700 Benefits : Other,G&A : Finance,USD,Acme Inc.,No
+1014,UK Pension Fund Provider,611800 401(k) Match,G&A : HR,GBP,Acme UK Ltd,No
+1015,UY Payroll Provider,611100 Salaries and Wages,G&A : HR,UYU,Acme Uruguay,No
+1016,Vendor_DE_001,651100 Professional Fees : Legal,G&A : Legal,EUR,Acme Germany,No

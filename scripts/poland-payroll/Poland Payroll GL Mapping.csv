@@ -1,0 +1,56 @@
+Raw Column,Role,GL Account - COGS,GL Account - OpEx,Line Memo
+Type of contract,Meta,,,
+Payroll Date,Meta,,,
+Payout Date,Meta,,,
+Payroll list number,Meta,,,
+Month of ZUS declaration,Meta,,,
+Month of TAX declaration,Meta,,,
+Code EE,Meta,,,
+Name & Surname,Meta,,,
+Gross salary from contract,Meta,,,
+NET to be paid,NetPay,,,
+Gross salary in this month after deductions for absences,Aggregate,,,
+Vacation,Aggregate,,,
+Special leave,Aggregate,,,
+Child care holiday,Aggregate,,,
+Training,Aggregate,,,
+Other absences - company holiday,Aggregate,,,
+TOTAL gross salary in this month,Expense,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,611100 Salary and Compensation : Salaries and Wages,Poland Payroll - Salary
+Paternity leave,Expense,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,611100 Salary and Compensation : Salaries and Wages,Poland Payroll - Salary
+Sick leave salary,Expense,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,611100 Salary and Compensation : Salaries and Wages,Poland Payroll - Salary
+Bonus,Expense,511150 COGS - Salary and Compensation : COGS - Bonus,611150 Salary and Compensation : Bonus,Poland Payroll - Bonus
+Equivalent for unused day,VariableExpense,511150 COGS - Salary and Compensation : COGS - Bonus,611150 Salary and Compensation : Bonus,Poland Payroll - Vacation Payout
+Odprawa bez ZUS,VariableSeverance,511175 COGS - Salary and Compensation : COGS - Severance,511175 COGS - Salary and Compensation : COGS - Severance,Poland Payroll - Severance
+Gift card,IgnoreIfZero,,,Poland Payroll - Gift Card (IGNORED)
+Incentive bonus,Expense,511150 COGS - Salary and Compensation : COGS - Bonus,611150 Salary and Compensation : Bonus,Poland Payroll - Bonus
+Medical Care,Meta,,,Booked separately via vendor bill - not in payroll JE
+Medical Care Deduction,Meta,,,
+Fitness,Meta,,,Booked separately via vendor bill - not in payroll JE
+Remote Work Lump Sum,Expense,511300 COGS - Salary and Compensation : COGS - Other Benefits,611400 Salary and Compensation : Other Benefits,Poland Payroll - Other Benefits
+Relocation,Meta,,,Booked separately - not in payroll JE
+% tax,Meta,,,
+TAX advance,EEDeduction,,,
+Cost of revenue,EEDeduction,,,
+Tax reclaim,EEDeduction,,,
+Middle-class relief,EEDeduction,,,
+Basis of Health Insurance,Meta,,,
+Health Insurance 9% (52 EE),EEDeduction,,,
+"Health Insurance 7,75%",EEDeduction,,,
+Basis of ZUS contributions,Meta,,,
+TOTAL ZUS Contributions Employee (51 EE),EEDeduction,,,
+Pension insurance employee,EEDeduction,,,
+Disability insurance employee,EEDeduction,,,
+Sickness insurance,EEDeduction,,,
+TOTAL ZUS Contributions Employer (51 ER),Expense,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Poland Payroll Taxes
+Pension insurance employer,Meta,,,Component of AU (already in ER total)
+Disability insurance employer,Meta,,,Component of AU (already in ER total)
+Accident insurance_employer,Meta,,,Component of AU (already in ER total)
+Labour Fund (53 ER),Expense,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Poland Payroll Taxes
+Guaranted Employee Benefits Fund (53 ER),Expense,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Poland Payroll Taxes
+Basic contribution PKK  ER,Meta,,,Component of BC (already in Total PPK ER)
+Additional contribution PPK ER,Meta,,,Component of BC (already in Total PPK ER)
+Total PPK ER contribution,Expense,511250 COGS - Salary and Compensation : COGS - 401k Match,611250 Salary and Compensation : 401k Match,Poland Payroll - 401K Match
+Basic contribution PPK EE,EEDeduction,,,
+Additional contribution PPK EE,EEDeduction,,,
+Total PPK EE contribution,EEDeduction,,,
+TOTAL PPK Contributions,Aggregate,,,

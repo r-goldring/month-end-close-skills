@@ -1,0 +1,47 @@
+Pay Code,Role,GL Account - COGS,GL Account - OpEx,Line Memo,Description
+1,GrossComponent,,,,SUELDO BASE - component of Total Gross Pay (code 2000)
+3,GrossComponent,,,,HORAS EXTRAS x2 - overtime; component of Total Gross Pay
+43,GrossComponent,,,,SALARY ADJUSTMENT (AJUSTE SUELDO) - component
+50,SpecialBonus,511150 COGS - Salary and Compensation : COGS - Bonus,611150 Salary and Compensation : Bonus,Uruguay Payroll - Special Bonus,BONO/MIP one-time bonus - flag for review at runtime
+67,MedicalCoverage,,,,MEDICAL COVERAGE (COBERTURA MEDICA) - subtracted from Salaries DR (offset by 667 deduction)
+75,GrossComponent,,,,DAY ADJUSTMENT (AJUSTE DIAS) - component
+87,GrossComponent,,,,AJUSTE IRPF MES ANTERIOR - prior month IRPF adjustment
+88,GrossComponent,,,,DIAS ENFERMEDAD BPS - sick days BPS
+256,GrossComponent,,,,SAL.VAC.EGRESO - severance vacation salary (rolls into Total Gross Pay)
+271,GrossComponent,,,,LICENCIA NO GOZADA - unused vacation (rolls into Total Gross Pay)
+310,GrossComponent,,,,AGUINALDO EGRESO - severance aguinaldo (rolls into Total Gross Pay)
+500,EEDeduction,,,,MONTEPIO 15% - employee pension
+505,EEDeduction,,,,AJUSTE FONASA LIQ. ANT. - prior FONASA adjustment
+525,EEDeduction,,,,FRL 0.10% - employee retraining
+531,EEDeduction,,,,FONASA 4.5% - employee health
+532,EEDeduction,,,,FONASA 6% - employee health tier 2
+533,EEDeduction,,,,AJUSTE IRPF LIQ ANT - prior IRPF adjustment
+536,EEDeduction,,,,MONTHLY INCOME TAX ADVANCE (ANTICIPO IRPF MENSUAL)
+556,EEDeduction,,,,IRNR - non-resident income tax
+609,EEDeduction,,,,DESCTO ADELANTO - advance deduction
+667,MedicalCoverageDeduction,,,,MEDICAL COVERAGE DEDUCTION - offsets code 67; net effect zero in JE
+999,GrossComponent,,,,REDONDEO - rounding
+2000,TotalGrossPay,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,611100 Salary and Compensation : Salaries and Wages,Uruguay Payroll - Salaries & Wages,Total Gross Pay - DR Salaries (minus Medical Coverage)
+2010,Aggregate,,,,Total Employee Deductions
+2020,Aggregate,,,,Total Employer Contributions
+2030,NetPay,,,,Net Pay - CR 231200 Payroll Liability
+6016,IgnoredInJE,,,,AJUSTE PROV. LICENCIA EN EGRES - egreso provision adjustment; not posted (handled in accrual reversal)
+6026,IgnoredInJE,,,,AJUSTE PROV. SV EN EGRESOS - egreso provision adjustment; not posted
+6036,IgnoredInJE,,,,AJUSTE PROV. CS LIC. EN EGRESOS - egreso provision adjustment; not posted
+6300,AguinaldoBonus,511150 COGS - Salary and Compensation : COGS - Bonus,611150 Salary and Compensation : Bonus,Uruguay Payroll - Aguinaldo,MONTHLY BONUS PROVISION (PROVISION AGUINALDO DEL MES) - Block 2 DR Bonus
+6301,IgnoredInJE,,,,LICENSE PROVISION (PROVISION LICENCIA) - tracked in Provisiones audit file; not posted in monthly JE
+6302,IgnoredInJE,,,,VACATION SALARY PROVISION (PROVISION SALARIO VAC) - tracked in Provisiones audit file; not posted
+6303,AguinaldoBonusTax,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Uruguay Payroll - Aguinaldo PR Tax,LICENSE CS PROVISION (PROV. CS LICENCIA) - Block 2 DR Bonus PR Tax
+6304,AguinaldoBonusTax,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Uruguay Payroll - Aguinaldo PR Tax,SOCIAL SECURITY BONUS PROVISION (PROVISION C.SOCIALES AGUINALDO) - Block 2 DR Bonus PR Tax
+7001,Block1ERTax,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Uruguay Payroll Taxes,GENERAL EMPLOYER BPS (BPS PATRONAL GENERAL)
+7002,Block1ERTax,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Uruguay Payroll Taxes,BPS PATRONAL AGUINALDO - egreso aguinaldo BPS
+7003,Block1ERTax,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Uruguay Payroll Taxes,GENERAL EMPLOYER FRL + FG (FRL + FG PATRONAL GENERAL)
+7004,Block1ERTax,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Uruguay Payroll Taxes,FRL + FG PATRONAL AGUINALDO - egreso aguinaldo FRL+FG
+7007,Block1ERTax,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,Uruguay Payroll Taxes,FONASA PATRONAL GENERAL (FONASA EMPLOYER)
+71,GrossComponent,,,,ABSENT DAYS (FALTAS DIAS) - DRY-RUN excluded; revisit if JE unbalances
+253,GrossComponent,,,,VACATION PAY (SALARIO VACACIONAL) - DRY-RUN excluded
+261,GrossComponent,,,,VACATION LEAVE TAKEN (LICENCIA GOZADA) - DRY-RUN excluded
+262,GrossComponent,,,,SPECIAL LEAVE (LICENCIAS ESPECIALES) - DRY-RUN excluded
+7005,GrossComponent,,,,EMPLOYER BPS LEAVE (BPS PATRONAL LICENCIA) - DRY-RUN excluded
+7006,GrossComponent,,,,EMPLOYER FRL+FG LEAVE (FRL+FG PATRONAL LICENCIA) - DRY-RUN excluded
+7008,GrossComponent,,,,EMPLOYER FONASA LEAVE (FONASA PATRONAL LICENCIA) - DRY-RUN excluded

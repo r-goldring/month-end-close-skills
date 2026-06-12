@@ -1,0 +1,69 @@
+# accounts.yaml.example
+#
+# Bank account configuration for the bank-statement-posting skill.
+# Copy to accounts.yaml and fill in your real values.
+#
+# Each entry: a logical account key (used by the skill for dispatch) plus the
+# attributes the skill needs to (a) identify which CSV belongs to which account,
+# (b) post records under the right subsidiary/GL, and (c) format the paste-back
+# tab matching your spreadsheet layout.
+
+accounts:
+
+  chase_operating:
+    bank_name: Chase
+    bank_account_string: "Chase x0001"
+    account_number_suffix: "x0001"
+    gl_account_id: 101
+    gl_account_number: "101000"
+    subsidiary_id: 2
+    subsidiary_path: "Acme Holdings : Acme Inc."
+    currency: USD
+    sheet_tab: "Chase Operating"
+    csv_format: chase_standard
+    filename_glob: "Chase_Operating_*.csv"
+    status: active
+
+  bofa_mma:
+    bank_name: Bank of America
+    bank_account_string: "Bank of America x0002"
+    account_number_suffix: "x0002"
+    gl_account_id: 102
+    gl_account_number: "101100"
+    subsidiary_id: 2
+    subsidiary_path: "Acme Holdings : Acme Inc."
+    currency: USD
+    sheet_tab: "BofA MMA"
+    csv_format: bofa_standard
+    filename_glob: "BofA_MMA_*.csv"
+    status: active
+
+  wells_fargo_ap:
+    bank_name: Wells Fargo
+    bank_account_string: "Wells Fargo x0003"
+    account_number_suffix: "x0003"
+    gl_account_id: 103
+    gl_account_number: "101200"
+    subsidiary_id: 2
+    subsidiary_path: "Acme Holdings : Acme Inc."
+    currency: USD
+    sheet_tab: "WF AP"
+    csv_format: wells_fargo_activity_detail
+    filename_glob: "WF_AP_*.csv"
+    status: active
+
+  td_canada:
+    bank_name: TD Canada Trust
+    bank_account_string: "TD Canada Trust x0004"
+    account_number_suffix: "x0004"
+    gl_account_id: 104
+    gl_account_number: "101300"
+    subsidiary_id: 3
+    subsidiary_path: "Acme Holdings : Acme Inc. : Acme Canada"
+    currency: CAD
+    sheet_tab: "TD Canada"
+    csv_format: td_canada_standard
+    filename_glob: "TD_Canada_*.csv"
+    status: stub
+    # status: stub means "skill knows this account exists but has no parser yet."
+    # Drop a historical sample CSV at the path the skill suggests on first run.

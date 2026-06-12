@@ -1,0 +1,56 @@
+Raw Column,Role,GL Account - COGS,GL Account - OpEx,Line Memo
+PayRunDate,Meta,,,
+EeRef,Meta,,,
+Name,Meta,,,
+Dept,Meta,,,
+CostCentre,Meta,,,
+Branch,Meta,,,
+Status,Meta,,,
+TaxCode,Meta,,,
+NILetter,Meta,,,
+GrossPay,Aggregate,,,
+PreTaxAddDed,Aggregate,,,
+TotalAbsencePay,Aggregate,,,
+SMP,Statutory,,,Provider gross SMP - used to compute SMP Unrecovered against P32 PDF
+SSP,Statutory,,,
+SAP,Statutory,,,
+SHPP,Statutory,,,
+SPP,Statutory,,,
+SPBP,Statutory,,,
+HolidayPay,Aggregate,,,Provider system column - the GBP earning is `Holiday Pay (£)`
+PenPreTaxEe,EEDeduction,,,
+TaxablePay,Aggregate,,,
+NiablePay,Aggregate,,,
+Tax,EEDeduction,,,
+NI,EEDeduction,,,
+PostTaxAddDed,EEDeduction,,,
+PostTaxPension,EEDeduction,,,
+BIKs,EEDeduction,,,
+AEO,EEDeduction,,,
+StudentLoan,EEDeduction,,,
+PostgraduateLoan,EEDeduction,,,
+NetPay,NetPay,,,
+ErNI,Expense,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,UK Payroll Taxes
+Class1ANics,Expense,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,611450 Salary and Compensation : Payroll Taxes,UK Payroll Taxes
+PenEr,Expense,511250 COGS - Salary and Compensation : COGS - 401k Match,611350 Salary and Compensation : 401k Match,UK Payroll - 401k Match
+TotalNICs,Aggregate,,,
+TotalPens,Aggregate,,,
+UK Pension Fund Provider GPP(Er),Aggregate,,,Already in PenEr
+UK Pension Fund Provider GPP,Aggregate,,,Already in PenPreTaxEe
+Commission (£),Expense,611200 Salary and Compensation : Commission,611200 Salary and Compensation : Commission,UK Payroll - Commissions
+Salary (£),Expense,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,611100 Salary and Compensation : Salaries and Wages,UK Payroll - Salaries & Wages
+Health Insurance (£),HealthRecovery,511200 COGS - Salary and Compensation : COGS - Health Benefits,611300 Salary and Compensation : Health Benefits,UK Payroll - Health Benefits
+Bonus (£),Expense,511150 COGS - Salary and Compensation : COGS - Bonus,611150 Salary and Compensation : Bonus,UK Payroll - Bonus
+Holiday Pay (£),Severance,511175 COGS - Salary and Compensation : COGS - Severance,611250 Severance,UK Payroll - Severance
+Lieu of Notice (£),Severance,511175 COGS - Salary and Compensation : COGS - Severance,611250 Severance,UK Payroll - Severance
+Termination Under £30k,Severance,511175 COGS - Salary and Compensation : COGS - Severance,611250 Severance,UK Payroll - Severance
+Termination Payment,Severance,511175 COGS - Salary and Compensation : COGS - Severance,611250 Severance,UK Payroll - Severance
+Additional Pay (£),Severance,511175 COGS - Salary and Compensation : COGS - Severance,611250 Severance,UK Payroll - Severance
+Incentives (£),Expense,511150 COGS - Salary and Compensation : COGS - Bonus,611150 Salary and Compensation : Bonus,UK Payroll - Bonus
+Post Graduate Loan Repayment,EEDeduction,,,
+Car Allowance (£),Expense,511300 COGS - Salary and Compensation : COGS - Other Benefits,611400 Salary and Compensation : Other Benefits,UK Payroll - Other Benefits
+UK Pension Fund Provider SS(Er),Aggregate,,,Already in PenEr
+UK Pension Fund Provider SS,Aggregate,,,Already in PenPreTaxEe
+Mobile Allowance (£),Expense,511300 COGS - Salary and Compensation : COGS - Other Benefits,611400 Salary and Compensation : Other Benefits,UK Payroll - Other Benefits
+Company Maternity Pay (£),Expense,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,611100 Salary and Compensation : Salaries and Wages,UK Payroll - Salaries & Wages
+Gift Over £50,Expense,511300 COGS - Salary and Compensation : COGS - Other Benefits,611400 Salary and Compensation : Other Benefits,UK Payroll - Other Benefits

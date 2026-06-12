@@ -1,0 +1,25 @@
+[
+  {
+    "timestamp": "2026-04-15T14:22:01",
+    "skill": "us-payroll",
+    "action": "GENERATE_CSV",
+    "description": "April 15 2026 US bi-weekly payroll JE Import CSV - 24 lines",
+    "csv_path": "Monthly Payroll/Pay Runs/US/04.15.2026/2026-04 US Payroll JE Import.csv"
+  },
+  {
+    "timestamp": "2026-04-15T15:48:33",
+    "skill": "us-payroll",
+    "action": "POST_JE",
+    "description": "April 15 2026 US bi-weekly payroll JE - posted to Pending Approval queue",
+    "je_number": "JE#####",
+    "netsuite_internal_id": "1234567"
+  },
+  {
+    "timestamp": "2026-04-15T16:02:11",
+    "skill": "bank-statement-posting",
+    "action": "POST_CUSTOMER_PAYMENT",
+    "description": "Applied Globex Industries ACH $42,500.00 to Inv-10245",
+    "record_type": "customerpayment",
+    "netsuite_internal_id": "2345678"
+  }
+]

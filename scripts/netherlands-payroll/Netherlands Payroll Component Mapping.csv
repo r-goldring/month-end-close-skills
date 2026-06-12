@@ -1,0 +1,19 @@
+Component Code,Component Name,Expense Account - OpEx (Product),Expense Account - COGS (Professional Services),Liability Account,Liability Absolute Value,Line Memo Suffix,Notes
+1000,Gross salary,611100 Salary and Compensation : Salaries and Wages,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,,,BV Payroll - Salary,
+7711,Reservation holiday allowance,611100 Salary and Compensation : Salaries and Wages,511100 COGS - Salary and Compensation : COGS - Salaries and Wages,231206 Netherlands Holiday Pay Accrual,No,BV Holiday Pay Accrual,Also credits Holiday Accrual liability
+3045,Incentive Bonus(special rate),611150 Salary and Compensation : Bonus,511150 COGS - Salary and Compensation : COGS - Bonus,,,BV Payroll - 2025 MIP,
+6539,Pension premium Wg,611350 Salary and Compensation : 401k Match,511250 COGS - Salary and Compensation : COGS - 401k Match,231205 Netherlands Pension Payable,No,BV Payroll - 401K Match,Hits both 401k Match expense and Pension Payable liability
+6538,Pension premium Wn,,,231205 Netherlands Pension Payable,Yes,BV Pension Liability,Liability only - negative in raw so stored as absolute
+8090,Aof premium low,611450 Salary and Compensation : Payroll Taxes,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,231350 Payroll Tax Liability,No,BV Payroll Taxes,
+8075,Differentiated WGA premium employer,611450 Salary and Compensation : Payroll Taxes,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,231350 Payroll Tax Liability,No,BV Payroll Taxes,
+8083,Unemployment premium employer low,611450 Salary and Compensation : Payroll Taxes,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,231350 Payroll Tax Liability,No,BV Payroll Taxes,
+8098,WKO premium (childcare act),611450 Salary and Compensation : Payroll Taxes,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,231350 Payroll Tax Liability,No,BV Payroll Taxes,
+8682,ZVW contribution employer,611450 Salary and Compensation : Payroll Taxes,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,231350 Payroll Tax Liability,No,BV Payroll Taxes,
+8101,ZW premium employer,611450 Salary and Compensation : Payroll Taxes,511350 COGS - Salary and Compensation : COGS - Payroll Taxes,231350 Payroll Tax Liability,No,BV Payroll Taxes,
+8800,Wage tax (table),,,231350 Payroll Tax Liability,Yes,BV Payroll Tax Liability,Negative in raw - absolute to liability
+8801,Wage tax (spec. rate),,,231350 Payroll Tax Liability,Yes,BV Payroll Tax Liability,Bonus months only - negative in raw
+9900,Total net,,,231200 Payroll Liability,No,BV Payroll Liability,Net pay owed to employees
+9901,Per bankaccount,,,231200 Payroll Liability,No,BV Payroll Liability,Feb 2026 alternate name for Total net
+3211,Giftcard (grossedup),,,,,IGNORE,Ignored - already embedded in Wage tax and Total Net; double-counting otherwise (matches US/Germany policy; confirmed with Apr 2026 balance test)
+5211,Rebooking Giftcard,,,,,IGNORE,Ignored - offset to Giftcard (grossedup); already embedded in Total Net
+7710,Holiday allowance,,,231206 Netherlands Holiday Pay Accrual,No,BV Payroll - Holiday Allowance Payout,May Vakantiegeld payout. Debits 231206 to clear the accrual built up via 7711. Confirmed via NS history JE##### (2024-05) + JE##### (2025-05). Per-dept routing via holiday_payout_debit bucket.

@@ -1,0 +1,24 @@
+Employee ID,Employee Name,Cost Center,Pay Code,Hours,Amount,Pay Period End
+EE0001,Employee_001,Engineering : Backend,REG,80,4800.00,2026-04-15
+EE0001,Employee_001,Engineering : Backend,FED-TAX,,720.00,2026-04-15
+EE0001,Employee_001,Engineering : Backend,FICA-SS,,297.60,2026-04-15
+EE0001,Employee_001,Engineering : Backend,FICA-MED,,69.60,2026-04-15
+EE0001,Employee_001,Engineering : Backend,401K-EE,,240.00,2026-04-15
+EE0002,Employee_002,Engineering : Frontend,REG,80,5200.00,2026-04-15
+EE0002,Employee_002,Engineering : Frontend,FED-TAX,,780.00,2026-04-15
+EE0002,Employee_002,Engineering : Frontend,FICA-SS,,322.40,2026-04-15
+EE0002,Employee_002,Engineering : Frontend,FICA-MED,,75.40,2026-04-15
+EE0003,Employee_003,Sales : Region A,REG,80,6000.00,2026-04-15
+EE0003,Employee_003,Sales : Region A,COMM,,2500.00,2026-04-15
+EE0003,Employee_003,Sales : Region A,FED-TAX,,1275.00,2026-04-15
+EE0003,Employee_003,Sales : Region A,FICA-SS,,527.00,2026-04-15
+EE0003,Employee_003,Sales : Region A,FICA-MED,,123.25,2026-04-15
+EE0004,Employee_004,G&A : Finance,REG,80,4400.00,2026-04-15
+EE0004,Employee_004,G&A : Finance,FED-TAX,,660.00,2026-04-15
+EE0004,Employee_004,G&A : Finance,FICA-SS,,272.80,2026-04-15
+EE0004,Employee_004,G&A : Finance,FICA-MED,,63.80,2026-04-15
+EE0005,Employee_005,Customer Success,REG,80,3800.00,2026-04-15
+EE0005,Employee_005,Customer Success,FED-TAX,,570.00,2026-04-15
+EE0005,Employee_005,Customer Success,FICA-SS,,235.60,2026-04-15
+EE0005,Employee_005,Customer Success,FICA-MED,,55.10,2026-04-15
+EE0005,Employee_005,Customer Success,BONUS,,1000.00,2026-04-15

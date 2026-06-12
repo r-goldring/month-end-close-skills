@@ -1,0 +1,113 @@
+# ═══════════════════════════════════════════════════════════════
+# Monthly-Accounting .gitignore
+# Keep: skill files, scripts, mapping CSVs, README/CLAUDE.md
+# Ignore: raw data, pay run Excel files, Reconciliation Tool reconciliations,
+#         historical flux workbooks, meeting transcripts
+# ═══════════════════════════════════════════════════════════════
+
+# Large Reconciliation Tool reconciliation folder (~1.5 GB of Excel files)
+Monthly Reconciliations/
+
+# Pay run raw files — these are monthly data drops, not source code
+# The folder structure stays in git via a .gitkeep file per country
+Monthly Payroll/Pay Runs/*/*/
+
+# Current/future month payroll drops
+Monthly Payroll/*/20*-*/
+Monthly Payroll/*/*.xls
+Monthly Payroll/*/*.xlsx
+
+# Interco JE monthly data (generated CSVs + raw queries)
+Monthly Intercompany JEs/2*/
+Monthly Intercompany JEs/Historical Examples/
+
+# Bonus accrual monthly data (FP&A source xlsx + generated CSVs)
+Monthly Bonus Accrual/2*/
+
+# Flux analysis monthly outputs (the workbooks themselves, not the skill)
+Monthly Flux Analysis/2024/
+Monthly Flux Analysis/2025/
+Monthly Flux Analysis/2026/
+Monthly Flux Analysis/*.xlsx
+Monthly Flux Analysis/Gemini Meeting Transcripts and Notes/
+Monthly Flux Analysis/*.html
+
+# Keep the Flux Pivot Template (it's a tool, not data)
+!Monthly Flux Analysis/Flux Pivot Template.xlsx
+
+# Weekly cash activity raw files
+Weekly Cash Activities/2*/
+Weekly Cash Activities/Historical Exampels/
+Weekly Cash Activities/Historical Examples/
+
+# Daily paste-back / paste-in cash files (root-level ephemeral outputs/inputs)
+Weekly Cash Activities/banking-transactions-paste-*.xlsx
+Weekly Cash Activities/chase-paste-*.csv
+Weekly Cash Activities/Transaction Details*.csv
+
+# Keep .skill archive files
+!Monthly Intercompany JEs/*.skill
+!Weekly Cash Activities/*.skill
+
+# COA / departments / vendors / customers raw reference files
+# (These are snapshots — treat as data, not code)
+COA, Depts, Vendors, Customers, NetSuite/Example Journal Entry CSVs/
+COA, Depts, Vendors, Customers, NetSuite/*.xls
+COA, Depts, Vendors, Customers, NetSuite/*.xlsx
+COA, Depts, Vendors, Customers, NetSuite/Updated Files 4.17.26 (with InternalIDs)/*.xls
+
+# Scripts: keep .py and mapping .csv files, ignore raw input/output data
+scripts/*/G*.xls
+scripts/*/G*.xlsx
+scripts/*/*.xls
+scripts/*/*.xlsx
+scripts/*/Final Output*.csv
+scripts/*/Generated_Output*.csv
+scripts/*/test_*.csv
+scripts/*/Review_Report*.csv
+scripts/avalara/Current Month/
+scripts/avalara/Historical Examples/
+# But keep mapping files
+!scripts/*/*Mapping*.csv
+!scripts/*/*mapping*.csv
+!scripts/avalara/State Department of Taxation Name.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp files
+*.tmp
+*.tmp.*
+
+# Excel lock files (created when a workbook is open, auto-deleted on close)
+**/.~lock.*#
+**/~$*.xlsx
+**/~$*.xls
+**/~$*.csv
+
+# User-local Claude Code settings (project-wide settings.json IS committed)
+.claude/settings.local.json
+
+# Slack transcripts (incomplete / analysis only)
+Slack Transcript Analysis - Skill Building*/
+
+# Public mirror dry-run output (regenerated on every sync)
+scripts/_public_mirror/_public_preview/
+
+# Monthly cash-confirmation real payment data (check numbers, masked bank
+# accounts, amounts, counterparties). The SKILL ships publicly; the DATA never does.
+Monthly Cash Confirmations/
+
+# Monthly CFS real financials — subsidiary/consolidated cash-flow workbooks
+# (real GL balances, FX, intercompany), the pulled GL data (_data/*.json), and
+# the per-month build/checks artifacts. The SKILL + scripts ship; DATA never does.
+Monthly CFS/
+
+# Real vendor-alias map for the cash-confirmation skill (registry of real
+# landlords/subtenants/law firms). Public mirror ships a fictional .example.
+.claude/skills/monthly-cash-confirmation/vendor_aliases.yaml
+
+# Claude Code session lock file (ephemeral, per-session)
+.claude/scheduled_tasks.lock

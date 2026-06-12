@@ -1,0 +1,9 @@
+Internal ID,Name,Full Name,Currency,Country,Parent
+1,Acme Holdings,Acme Holdings,USD,US,
+2,Acme Inc.,Acme Holdings : Acme Inc.,USD,US,1
+3,Acme Canada,Acme Holdings : Acme Inc. : Acme Canada,CAD,CA,2
+4,Acme Netherlands,Acme Holdings : Acme Inc. : Acme Netherlands,EUR,NL,2
+5,Acme UK Ltd,Acme Holdings : Acme Inc. : Acme UK Ltd,GBP,GB,2
+6,Acme Poland,Acme Holdings : Acme Inc. : Acme Poland,PLN,PL,2
+7,Acme Uruguay,Acme Holdings : Acme Inc. : Acme Uruguay,UYU,UY,2
+8,Acme Germany,Acme Holdings : Acme Inc. : Acme Germany,EUR,DE,2

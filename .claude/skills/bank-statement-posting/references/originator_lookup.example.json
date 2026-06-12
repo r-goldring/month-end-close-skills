@@ -1,0 +1,66 @@
+{
+  "_comment": "Maps bank-statement 'originator' strings to NetSuite customer IDs. Build this by running a one-time match script across your historical bank statements vs the NetSuite customer list. Each entry has a confidence score 0.0-1.0; entries below 0.85 should be manually reviewed before auto-posting.",
+  "_schema_version": 1,
+  "lookup": [
+    {
+      "originator_pattern": "GLOBEX IND ACH",
+      "customer_id": 2001,
+      "customer_name": "Globex Industries",
+      "confidence": 0.99
+    },
+    {
+      "originator_pattern": "INITECH PAYMENT",
+      "customer_id": 2002,
+      "customer_name": "Initech LLC",
+      "confidence": 0.98
+    },
+    {
+      "originator_pattern": "HOOLI CORP WIRE",
+      "customer_id": 2003,
+      "customer_name": "Hooli Corp",
+      "confidence": 0.97
+    },
+    {
+      "originator_pattern": "PIED PIPER INC",
+      "customer_id": 2004,
+      "customer_name": "Pied Piper Inc",
+      "confidence": 0.99
+    },
+    {
+      "originator_pattern": "MASSIVE DYNAMIC",
+      "customer_id": 2005,
+      "customer_name": "Massive Dynamic",
+      "confidence": 0.95
+    },
+    {
+      "originator_pattern": "STARK IND",
+      "customer_id": 2006,
+      "customer_name": "Stark Industries",
+      "confidence": 0.92
+    },
+    {
+      "originator_pattern": "CYBERDYNE SYS",
+      "customer_id": 2007,
+      "customer_name": "Cyberdyne Systems",
+      "confidence": 0.96
+    },
+    {
+      "originator_pattern": "WONKA IND ACH",
+      "customer_id": 2008,
+      "customer_name": "Wonka Industries",
+      "confidence": 0.94
+    },
+    {
+      "originator_pattern": "SOYLENT CORP",
+      "customer_id": 2009,
+      "customer_name": "Soylent Corp",
+      "confidence": 0.91
+    },
+    {
+      "originator_pattern": "TYRELL CORP WIRE",
+      "customer_id": 2010,
+      "customer_name": "Tyrell Corporation",
+      "confidence": 0.97
+    }
+  ]
+}

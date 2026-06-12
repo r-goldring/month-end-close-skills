@@ -1,0 +1,35 @@
+Internal ID,Number,Name,Type,Subsidiary,Currency,Description,Inactive
+101,101000,Cash : Chase Operating : USD,Bank,Acme Holdings : Acme Inc.,USD,Primary US operating account,No
+102,101100,Cash : Bank of America MMA : USD,Bank,Acme Holdings : Acme Inc.,USD,US money market,No
+103,101200,Cash : Wells Fargo AP : USD,Bank,Acme Holdings : Acme Inc.,USD,US AP wire account,No
+104,101300,Cash : TD Canada Trust : CAD,Bank,Acme Holdings : Acme Inc. : Acme Canada,CAD,Canada operating,No
+105,101400,Cash : ING Netherlands : EUR,Bank,Acme Holdings : Acme Inc. : Acme Netherlands,EUR,Netherlands operating,No
+120,121000,Accounts Receivable,Accounts Receivable,Acme Holdings : Acme Inc.,USD,Trade AR,No
+121,121900,Accounts Receivable : Intercompany Receivables,Other Current Asset,Acme Holdings : Acme Inc.,USD,IC AR eliminated on consolidation,No
+210,211000,Accounts Payable,Accounts Payable,Acme Holdings : Acme Inc.,USD,Trade AP,No
+211,211900,Accounts Payable : Intercompany Payables,Other Current Liability,Acme Holdings : Acme Inc.,USD,IC AP eliminated on consolidation,No
+220,221000,Accrued Expenses,Other Current Liability,Acme Holdings : Acme Inc.,USD,Month-end accruals,No
+411,411000,Revenue : Subscription,Income,Acme Holdings : Acme Inc.,USD,SaaS subscription revenue,No
+511,511370,COGS : Contractors,Cost of Goods Sold,Acme Holdings : Acme Inc.,USD,Contractor COGS,No
+512,511425,COGS : Software : Amortized,Cost of Goods Sold,Acme Holdings : Acme Inc.,USD,Amortized software COGS,No
+611,611100,Salaries and Wages,Expense,Acme Holdings : Acme Inc.,USD,Payroll base salaries,No
+612,611200,Bonus,Expense,Acme Holdings : Acme Inc.,USD,Payroll bonus,No
+613,611300,Commission,Expense,Acme Holdings : Acme Inc.,USD,Sales commission,No
+614,611400,Severance,Expense,Acme Holdings : Acme Inc.,USD,Severance pay,No
+615,611500,Payroll Taxes,Expense,Acme Holdings : Acme Inc.,USD,Employer payroll taxes,No
+616,611600,Benefits : Medical,Expense,Acme Holdings : Acme Inc.,USD,Medical benefits,No
+617,611700,Benefits : Other,Expense,Acme Holdings : Acme Inc.,USD,Other benefits,No
+618,611800,401(k) Match,Expense,Acme Holdings : Acme Inc.,USD,Employer retirement match,No
+651,651100,Professional Fees : Legal,Expense,Acme Holdings : Acme Inc.,USD,Legal fees,No
+652,651150,Professional Fees : Accounting,Expense,Acme Holdings : Acme Inc.,USD,Accounting and audit fees,No
+671,671100,Software : Engineering Tools,Expense,Acme Holdings : Acme Inc.,USD,Eng SaaS subscriptions,No
+672,671200,Software : Sales Tools,Expense,Acme Holdings : Acme Inc.,USD,Sales SaaS subscriptions,No
+673,671300,Software : G&A,Expense,Acme Holdings : Acme Inc.,USD,G&A SaaS subscriptions,No
+681,681100,Intercompany Expense : Netherlands,Expense,Acme Holdings : Acme Inc.,USD,IC expense reclass to Netherlands,No
+682,681110,Intercompany Expense : Canada,Expense,Acme Holdings : Acme Inc.,USD,IC expense reclass to Canada,No
+683,681130,Intercompany Expense : US,Expense,Acme Holdings : Acme Inc.,USD,IC expense reclass to US,No
+684,681140,Intercompany Expense : UK,Expense,Acme Holdings : Acme Inc.,USD,IC expense reclass to UK,No
+685,681150,Intercompany Expense : Uruguay,Expense,Acme Holdings : Acme Inc.,USD,IC expense reclass to Uruguay,No
+686,681160,Intercompany Expense : Germany,Expense,Acme Holdings : Acme Inc.,USD,IC expense reclass to Germany,No
+710,710000,Bank Fees,Expense,Acme Holdings : Acme Inc.,USD,Bank service charges,No
+720,720000,Sales Tax Payable,Other Current Liability,Acme Holdings : Acme Inc.,USD,Avalara-managed sales tax,No

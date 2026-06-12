@@ -1,0 +1,33 @@
+# Monthly Cash Confirmation - vendor alias dictionary (EXAMPLE)
+#
+# Maps your FP&A team's shorthand labels (left side, what they write in the
+# monthly cash-confirmation request) to vendor-name patterns to search for in
+# the AP-tool payments_out_*.csv "Vendor" column or the banking XLSX tabs.
+#
+# Match rule: case-insensitive substring. The first vendor pattern that appears
+# as a substring of a payment row's Vendor field counts as a match.
+#
+# Replace these fictional Acme Corp entries with your own labels + patterns.
+# Format: "FP&A label": [list of AP-tool / banking name patterns]
+
+# ---- Sublease Payments (we pay our landlords; AP-tool lookup) ----
+"Landlord A":            ["Landlord A Property LLC", "Landlord A"]
+"Landlord B":            ["Landlord B Holdings", "Landlord B"]
+
+# ---- Sublease Income (tenants pay us; banking XLSX lookup) ----
+"Subtenant A":           ["Subtenant A Inc", "SubtenantA"]
+"Subtenant B":           ["Subtenant B LLC", "SubtenantB"]
+"Subtenant C":           ["Subtenant C Corp"]
+
+# ---- Other 1T - legal / consulting / contractors (AP-tool lookup) ----
+"Law Firm D":            ["Law Firm D LLP", "Law Firm D"]
+"Law Firm E":            ["Law Firm E LLP", "Law Firm E"]
+"Board Advisory Firm":   ["Board Advisory Firm", "Board Advisor"]
+"Accounting Firm B":     ["Accounting Firm B LLP", "Accounting Firm B"]
+"Equity Plan Administrator": ["Equity Plan Administrator"]
+"PEO Provider":          ["PEO Provider"]
+"External Audit Firm":   ["External Audit Firm LLP"]
+
+# ---- Insurance / benefits (AP-tool - "Marked as paid" rows) ----
+"Medical Carrier":       ["MEDICAL CARRIER PREMIUM"]
+"Dental Carrier":        ["DENTAL CARRIER PREMIUM"]

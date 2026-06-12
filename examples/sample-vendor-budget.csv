@@ -1,0 +1,11 @@
+Vendor,Expected Department,Expected GL Account,Jan 2026,Feb 2026,Mar 2026,Notes
+Slackatron,Sales : Region A,671200,1200.00,1200.00,1200.00,Monthly subscription
+Datadawg Analytics,Engineering : Backend,671100,5000.00,5000.00,5000.00,Monthly enterprise plan
+Cloudbase Inc.,Engineering : Infrastructure,671100,12000.00,12000.00,15000.00,Quarterly true-up in Mar
+Pingmaster,Engineering : Infrastructure,671100,800.00,800.00,800.00,
+BillFlow,G&A : Finance,671300,450.00,450.00,450.00,
+Inkwell Legal LLP,G&A : Legal,651100,3500.00,2800.00,4200.00,Variable billable hours
+Ledgerline Accounting,G&A : Finance,651150,2500.00,2500.00,8000.00,Q1 audit prep in Mar
+ContractorBridge,Engineering : Backend,511370,18000.00,18000.00,18000.00,2 contractors
+Northern Talent Co,Engineering : Frontend,511370,9000.00,9000.00,9000.00,1 contractor
+Brex,G&A : Finance,611700,0.00,0.00,0.00,Cashback offsets

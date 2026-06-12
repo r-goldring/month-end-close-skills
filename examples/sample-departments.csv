@@ -1,0 +1,18 @@
+Internal ID,Name,Full Name,Parent,Subsidiary,Inactive
+100,Engineering,Engineering,,All,No
+101,Engineering : Backend,Engineering : Backend,100,All,No
+102,Engineering : Frontend,Engineering : Frontend,100,All,No
+103,Engineering : Infrastructure,Engineering : Infrastructure,100,All,No
+200,Product,Product,,All,No
+300,Sales,Sales,,All,No
+301,Sales : Region A,Sales : Region A,300,All,No
+302,Sales : Region B,Sales : Region B,300,All,No
+303,Sales : Region C,Sales : Region C,300,All,No
+400,Marketing,Marketing,,All,No
+500,Customer Success,Customer Success,,All,No
+600,General & Administrative,General & Administrative,,All,No
+601,G&A : Finance,General & Administrative : Finance,600,All,No
+602,G&A : Legal,General & Administrative : Legal,600,All,No
+603,G&A : HR,General & Administrative : HR,600,All,No
+604,G&A : IT,General & Administrative : IT,600,All,No
+700,Revenue,Revenue,,All,No
